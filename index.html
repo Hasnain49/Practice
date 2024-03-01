@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div></div>
+
+    <div class="slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-slide">
+              <img src="/images/pexels-ákos-szabó-440731.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-slide">
+
+                <img src="/images/wallpaperflare.com_wallpaper (1).jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-slide">
+
+                <img src="/images/wallpaperflare.com_wallpaper.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <!-- <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+        el: ".swiper-pagination",
+        // dynamicBullets: true,
+        clickable: true,
+      },
+        });
+      </script> -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          // autoplay: {
+          //   delay: 3000,
+          //   disableOnInteraction: false,
+          // },
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+    </div>
+  </body>
+</html>
